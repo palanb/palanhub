@@ -1,6 +1,6 @@
 function checkPassword() {
     const password = document.getElementById('password').value;
-    const correctPassword = 'palanbuel';  // The correct password
+    const correctPassword = 'ilovedaniel123';  // The correct password
 
     if (password === correctPassword) {
         // Save a login token in localStorage
