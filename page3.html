@@ -16,3 +16,39 @@
     <iframe src="https://mobileiphone.symbaloo.com/mix/slope-2-unblocked" width="800" height="600" frameborder="0"></iframe>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="page1.html">Game 1</a> |
+            <a href="page2.html">Game 2</a> |
+            <a href="page3.html">Game 3</a> |
+            <button onclick="logout()">Logout</button>  <!-- Logout Button -->
+        </nav>
+    </header>
+
+    <h1>Game 1</h1>
+    <iframe src="https://example.com/your-game" width="800" height="600" frameborder="0"></iframe>
+
+    <script>
+        // Check if the user is authenticated
+        if (localStorage.getItem('authenticated') !== 'true') {
+            window.location.href = 'index.html';  // Redirect to login page
+        }
+
+        // Logout function
+        function logout() {
+            localStorage.removeItem('authenticated');  // Clear the login state
+            window.location.href = 'index.html';  // Redirect to login page
+        }
+    </script>
+</body>
+</html>
